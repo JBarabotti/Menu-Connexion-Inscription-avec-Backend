@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(Background.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 420px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+section h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding-right: 40px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.remember-forgot a, .register-link a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.remember-forgot a:hover, .register-link a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.login-btn:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+}

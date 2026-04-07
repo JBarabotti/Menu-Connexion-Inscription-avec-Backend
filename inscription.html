@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+
+    <section class="card">
+        <h1>Inscription</h1>
+        <form action="/inscription" method="POST">
+            <div class="input-box">
+                <div class="names">
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom *" required>
+                    <input type="text" id="nom" name="nom" placeholder="Nom *" required>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email *" required>
+                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe *" required>
+            </div>
+                <div class="news">
+                    <label><input type="checkbox"> S'abonner à la newsletter</label>
+                </div>
+                <button class="register-btn" type="submit">S'inscrire</button>
+        </form>
+                <div class="login-link">
+                    <p>Déjà inscrit ? <a href="connexion.html">Connectez-vous ici.</a></p>
+                </div>
+    </section>
+    
+    <script src="inscription.js"></script>
+
+</body>
+</html>

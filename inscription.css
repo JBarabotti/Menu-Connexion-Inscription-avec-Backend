@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(Background.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 420px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+.card h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding-right: 40px;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.register-btn:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
