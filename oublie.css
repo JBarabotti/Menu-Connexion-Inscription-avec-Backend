@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(Background.gif);
+    background: url(Background-probco.gif);
     background-size: cover;
     background-position: center;
 }
@@ -24,15 +24,47 @@ section {
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
 }
 
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+                transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 5px 7px;
+    border-radius: 10px;
+    transition: linear-gradient 2s ease;
+}
+
+a:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+}
+
 section h1 {
     font-size: 30px;
     color: white;
     text-align: center;
+    margin-top: 25px;
     margin-bottom: 20px;
+}
+
+.texta {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.textb {
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
 }
 
 .input-box {
     width: 100%;
+    margin-top: 7px;
     margin-bottom: 25px;
 }
 
@@ -55,29 +87,10 @@ input:focus::placeholder {
     border: 2px solid rgba(255, 255, 255, 0.2);
     color: white;
     padding-right: 40px;
-}
-
-.remember-forgot {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-    color: white;
     margin-bottom: 25px;
 }
 
-.remember-forgot a, .register-link a {
-    color: white;
-    text-decoration: none;
-    transition: 0.5s;
-    font-weight: bold;
-}
-
-.remember-forgot a:hover, .register-link a:hover {
-    text-decoration: underline;
-}
-
-.login-btn {
+.recup-btn {
     width: 100%;
     padding: 15px;
     border-radius: 25px;
@@ -89,14 +102,9 @@ input:focus::placeholder {
     transition: 0.5s;
 }
 
-.login-btn:hover {
+.recup-btn:hover {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.2);
     color: white;
 }
 
-.register-link {
-    text-align: center;
-    margin-top: 25px;
-    color: white;
-}
